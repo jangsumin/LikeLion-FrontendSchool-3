@@ -1,0 +1,78 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+p, body, button, article, div, img {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Spoqa Han Sans Neo";
+}
+
+img {
+  padding-right: 4px;
+  padding-bottom: 3px;
+  vertical-align: middle;
+}
+
+.login {
+  margin: 100px auto;
+  width: 350px;
+  height: 140px;
+  border-radius: 5px;
+  border: 1px solid #DBDBDB;
+}
+
+.txt_welcome {
+  margin: 19px 0 16px 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.btn_login {
+  margin-left: 16px;
+  /* margin: 0 auto; 안먹히는 이유 알기 */
+  background-color: #711BFF;
+  border: none;
+  border-radius: 4px;
+  width: 318px;
+  height: 40px;
+}
+
+.txt_login {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.find_account {
+  float: left;
+  margin: 16px 0 18px 16px;
+}
+
+.txt_find {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #767676;
+}
+
+.create_account {
+  float: right;
+  margin: 16px 16px 18px 0;
+}
+
+.txt_create {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #767676;
+}

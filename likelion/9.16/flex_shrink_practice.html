@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .big_box {
+      background-color: black;
+      border-radius: 5px;
+      width: 500px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .box1, .box2, .box3 {
+      margin: 0  10px;
+      background-color: aqua;
+      border-radius: 5px;
+      height: 70px;  
+    }
+
+    .box1, .box3 {
+      flex-grow: 1;
+    }
+    .box2 {
+      flex-grow: 3;
+    }
+  </style>
+</head>
+<body>
+  <section class="big_box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,52 @@
+h1, p, header {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 100px auto;
+}
+
+body {
+  background-image: url(images/bg.png);
+  background-size: cover;
+}
+
+.header {
+  height: 250px;
+  text-align: center;
+}
+
+.header img.animal {
+  width: 250px;
+}
+
+.contents {
+  color: white;
+  background-color: #A05C37;
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px / 0 0 15px 15px;
+  box-shadow: 0 7px 0 0 #5b382d;
+}
+
+.contents img.grass{
+  width: 250px;
+}
+
+.contents h1 {
+  font-size: 28px;
+  margin: 8px 13px;
+  font-weight: 900;
+}
+
+.contents p {
+  font-size: 14px;
+  margin: 0 13px;
+  padding-bottom: 24px;
+  font-weight: 600;
+  line-height: 17px;
+  opacity: 0.75;
+}

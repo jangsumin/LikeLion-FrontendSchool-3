@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>220922</title>
+    <style>
+      .txt_hide {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+      }
+      .labl-hold::before {
+        content: " ";
+        display: inline-block;
+        /* content 없으면 가상요소는 없는 것이 되므로 반드시 넣어줄것 */
+        width: 22px;
+        height: 22px;
+        background-image: url("/images/icon_check_empty.png");
+        vertical-align: top;
+      }
+      .inp-hold:checked + .labl-hold::before {
+        background-image: url("images/icon_check.png");
+      }
+
+      .inp-hold:focus + .labl-hold::before {
+        outline: 2px solid #000;
+        outline-offset: 5px;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <button>버튼</button>
+    <input type="checkbox">
+    <input id="inpHold" class="inp-hold txt_hide" type="checkbox" />
+    <label for="inpHold" class="labl-hold">선택해주세요</label>
+  </body>
+</html>

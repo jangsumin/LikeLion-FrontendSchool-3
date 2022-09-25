@@ -3,7 +3,7 @@
 * {
   font-family: "Spoqa Han Sans Neo";
 }
-h1, h2, p, img, button, section, a, input {
+h1, h2, p, img, button, section, a, input, label {
   padding: 0;
   margin: 0;
 }
@@ -88,7 +88,7 @@ h1, h2, p, img, button, section, a, input {
 }
 
 .sect-login-join {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .txt-welcome {
@@ -114,10 +114,38 @@ h1, h2, p, img, button, section, a, input {
 
 .input-pw {
   margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.labl-hold {
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+}
+
+.labl-hold::before {
+  content: " ";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  margin-left: 24px;
+  background-image: url("/images/icon_check_empty.png");
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+.inp-hold:checked + .labl-hold::before {
+  background-image: url("images/icon_check.png");
+}
+
+.inp-hold:focus + .labl-hold::before {
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .sect-login-join .btn-login {
   width: 472px;
+  margin-top: 20px;
   margin-left: 24px;
 }
 
@@ -125,12 +153,11 @@ h1, h2, p, img, button, section, a, input {
   width: 205px;
   height: 18px;
   margin: 0 auto;
-  padding-bottom: 30px;
 }
 
 .link-join, .link-id-pw {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -147,6 +174,73 @@ h1, h2, p, img, button, section, a, input {
   margin: 0 12px 0 12px;
 }
 
-.sect-sns {
+.txt-div {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #767676;
+}
 
+.txt-div::before {
+  display: inline-block;
+  content: '';
+  width: 210px;
+  height: 1px;
+  background-color: #767676;
+  margin: 0 13px 5px 24px;
+}
+
+.txt-div::after {
+  display: inline-block;
+  content: '';
+  width: 210px;
+  height: 1px;
+  background-color: #767676;
+  margin: 30px 24px 5px 13px;
+}
+
+.sect-sns {
+  margin: 12px 24px 20px 24px;
+}
+
+.go-google,
+.go-facebook,
+.go-naver,
+.go-kakao {
+  display: block;
+  margin: 10px auto;
+  padding-top: 15px;
+  width: 472px;
+  height: 35px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+  text-decoration: none;
+  border: 1px solid #767676;
+  border-radius: 5px;
+}
+
+.go-google {
+  background-image: url('images/google.png');
+  background-repeat: no-repeat;
+  background-position: 11px 12px;
+}
+
+.go-facebook {
+  background-image: url('images/facebook.png');
+  background-repeat: no-repeat;
+  background-position: 11px 12px;
+}
+
+.go-naver {
+  background-image: url('images/naver.png');
+  background-repeat: no-repeat;
+  background-position: 11px 12px;
+}
+
+.go-kakao {
+  background-image: url('images/kakao.png');
+  background-repeat: no-repeat;
+  background-position: 11px 12px;
 }

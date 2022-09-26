@@ -1,0 +1,382 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+  url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+  url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+* {
+  font-family: 'Noto Sans KR';
+}
+
+body {
+  width: 1920px;
+  height: 963px;
+  background-color: #eae8fe;
+}
+
+.header-title {
+  margin-bottom: 67px;
+  text-align: center;
+}
+
+.txt-hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.img-logo {
+  width: 386px;
+  height: 180px;
+}
+
+.main-cola {
+  display: flex;
+  width: 753px;
+  margin: 0 auto;
+}
+
+/* 화면 왼쪽 부분 */
+
+.sect-order {
+  width: 360px;
+  height: 545px;
+  margin-right: 28px;
+  background-color: #ffffff;
+}
+
+.list-cola-menu {
+  display: grid;
+  grid-template-columns: 94px 94px 94px;
+  grid-template-rows: 130px 130px;
+  gap: 12px;
+  width: 306px;
+  height: 272px;
+  margin: 31px auto 20px auto;
+}
+
+.list-cola-menu li .btn-select {
+  width: 94px;
+  height: 130px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 9px;
+  line-height: 13px;
+}
+
+.btn-select img {
+  width: 36px;
+  height: 65px;
+  margin-bottom: 4px;
+}
+
+.btn-select span {
+  display: block;
+  width: 70px;
+  height: 17px;
+  margin: 7px auto 0 auto;
+  padding-top: 5px;
+  background-color: #6327FE;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.list-calculation {
+  display: grid;
+  width: 305px;
+  height: 222px;
+  grid-template-rows: 33px 33px 134px;
+  grid-template-columns: 200px 94px;
+  gap: 11px;
+  margin: 0 auto 28px auto;
+}
+
+.list-calculation li:first-child {
+  display: flex;
+  width: 200px;
+  height: 33px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: #eae8fe;
+  border-radius: 5px;
+}
+
+.list-calculation li p {
+  margin: 6px 0 7px 10px;
+}
+
+.btn-return {
+  width: 94px;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.input-money {
+  width: 194px;
+  height: 33px;
+  padding-left: 6px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.btn-insert {
+  width: 94px;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.btn-select {
+  width: 94px;
+  height: 106px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6327FE;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.btn-select:hover {
+  border: 3px solid #6327FE;
+}
+
+.obtain-list {
+  display: flex;
+  flex-direction: column;
+  height: 94px;
+  padding: 12px 18px 0 12px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #eae8fe;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.obtain-cola {
+  display: flex;
+  width: 170px;
+  min-height: 46px;
+  margin-bottom: 6px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 9px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.obtain-cola:nth-child(1) {
+  background-image: url('/images/red-coke.png');
+  background-repeat: no-repeat;
+  background-size: 18px 33px;
+  background-position: 10px 6px;
+}
+
+.obtain-cola:nth-child(2) {
+  background-image: url('/images/green-coke.png');
+  background-repeat: no-repeat;
+  background-size: 18px 33px;
+  background-position: 10px 6px;
+}
+
+.obtain-cola:nth-child(3) {
+  background-image: url('/images/orange-coke.png');
+  background-repeat: no-repeat;
+  background-size: 18px 33px;
+  background-position: 10px 6px;
+}
+
+.obtain-cola:nth-child(4) {
+  background-image: url('/images/violet-coke.png');
+  background-repeat: no-repeat;
+  background-size: 18px 33px;
+  background-position: 10px 6px;
+}
+
+.obtain-cola p {
+  display: inline-block;
+  width: 73px;
+  height: 10px;
+  padding-left: 28px;
+}
+
+/* 화면 오른쪽 부분 */
+
+.sect-verify {
+  width: 360px;
+  height: 545px;
+}
+
+.sect-money {
+  width: 306px;
+  height: 32px;
+  margin-bottom: 20px;
+  padding: 8px 27px;
+  background-color: #ffffff;
+}
+
+/* 소지금 부분은 큰 의미를 내포하지 않는 것 같아 div 선택 */
+/* '소지금 :' 부분과 '25,000원'부분 flex. */
+.sect-money div {
+  display: flex;
+  width: 306px;
+  height: 32px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: #eae8fe;
+  border-radius: 5px;
+}
+
+.sect-money p {
+  margin: 6px 10px;
+}
+
+.txt-money {
+  width: 87px;
+  height: 20px;
+  margin: 6px 10px 6px auto;
+  text-align: right;
+  font-weight: 700;
+}
+
+.txt-money::after {
+  content: ' 원';
+  font-weight: 700;
+}
+
+.sect-cost {
+  width: 360px;
+  height: 451px;
+  padding-top: 25px;
+  background-color: #ffffff;
+}
+
+.tit-obtain {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.list-box {
+  display: flex;
+  height: 350px;
+  margin: 13px 27px 6px 27px;
+  padding: 12px 18px 0 12px;
+  flex-direction: column;
+  background-color: #eae8fe;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+} 
+
+.list-cola {
+  display: flex;
+  width: 276px;
+  height: 46px;
+  margin-bottom: 6px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 13px;
+  align-items: center;
+}
+
+.list-cola p {
+  display: inline-block;
+  width: 73px;
+  height: 10px;
+  margin-left: 38px;
+}
+
+.btn-count {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.list-cola:nth-child(1) {
+  background-image: url('/images/red-coke.png');
+  background-repeat: no-repeat;
+  background-size: 18px 33px;
+  background-position: 10px 6px;
+}
+
+.list-cola:nth-child(2) {
+  background-image: url('/images/green-coke.png');
+  background-repeat: no-repeat;
+  background-size: 18px 33px;
+  background-position: 10px 6px;
+}
+
+.list-cola:nth-child(3) {
+  background-image: url('/images/orange-coke.png');
+  background-repeat: no-repeat;
+  background-size: 18px 33px;
+  background-position: 10px 6px;
+}
+
+.list-cola:nth-child(4) {
+  background-image: url('/images/violet-coke.png');
+  background-repeat: no-repeat;
+  background-size: 18px 33px;
+  background-position: 10px 6px;
+}
+
+.sect-cost div {
+  width: 109px;
+  height: 20px;
+  margin: 6px 27px 26px auto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.txt-total {
+  text-align: right;
+}
+
+.txt-total::before {
+  content: '총금액 : ';
+}
+
+.txt-total::after {
+  content: ' 원';
+}

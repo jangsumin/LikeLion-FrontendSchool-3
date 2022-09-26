@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>vending machine</title>
+</head>
+<body>
+    
+  <header class="header-title">
+    <h1 class="txt-hide">Cola Cola veding machine</h1>
+    <img class="img-logo" src="./images/Logo.png" alt="">
+  </header>
+
+  <main class="main-cola">
+    <section class="sect-order">
+      <h2 class="txt-hide">Cola menu</h2>
+      <ul class="list-cola-menu">
+        <li>
+          <button type="button" class="btn-select">
+            <img src="./images/red-coke.png" alt="">
+            Original_Cola
+            <span>1000원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-select">
+            <img src="./images/violet-coke.png" alt="">
+            Violet_Cola
+            <span>1000원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-select">
+            <img src="./images/yellow-coke.png" alt="">
+            Yellow_Cola
+            <span>1000원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-select">
+            <img src="./images/skyblue-coke.png" alt="">
+            Cool_Cola
+            <span>1000원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-select">
+            <img src="./images/green-coke.png" alt="">
+            Green_Cola
+            <span>1000원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-select">
+            <img src="./images/orange-coke.png" alt="">
+            Orange_Cola
+            <span>1000원</span>
+          </button>
+        </li>
+      </ul>
+
+      <ul class="list-calculation">
+        <li>
+          <p>잔액 :</p>
+          <strong class="txt-money">1,000</strong>
+        </li>
+        <li>
+          <button type="button" class="btn-return">거스름돈 반환</button>
+        </li>
+        <li>
+          <input class="input-money" type="text" placeholder="입금액 입력">
+        </li>
+        <li>
+          <button type="button" class="btn-insert">입금</button>
+        </li>
+        <li>
+          <div class="obtain-list">
+            <div class="obtain-cola">
+              <p>Original_Cola</p>
+              <button type="button" class="btn-count">1</button>
+            </div>
+            <div class="obtain-cola">
+              <p>Green_Cola</p>
+              <button type="button" class="btn-count">2</button>
+            </div>
+            <div class="obtain-cola">
+              <p>Orange_Cola</p>
+              <button type="button" class="btn-count">1</button>
+            </div>
+            <div class="obtain-cola">
+              <p>Violet_Cola</p>
+              <button type="button" class="btn-count">5</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button type="button" class="btn-select">획득</button>
+        </li>
+      </ul>
+    </section>
+  
+    <section class="sect-verify">
+      <h2 class="txt-hide">Cola calculation</h2>
+      
+      <section class="sect-money">
+        <h3 class="txt-hide">my money</h3>
+        <div>
+          <p>소지금 :</p>
+          <strong class="txt-money">25,000</strong>
+        </div>
+      </section>
+
+      <section class="sect-cost">
+        <h3 class="tit-obtain">획득한 음료</h3>
+        <ul class="list-box">
+          <li class="list-cola">
+            <p>Original_Cola</p>
+            <button type="button" class="btn-count">1</button>
+          </li>
+          <li class="list-cola">
+            <p>Green_Cola</p>
+            <button type="button" class="btn-count">2</button>
+          </li>
+          <li class="list-cola">
+            <p>Orange_Cola</p>
+            <button type="button" class="btn-count">1</button>
+          </li>
+          <li class="list-cola">
+            <p>Violet_Cola</p>
+            <button type="button" class="btn-count">5</button>
+          </li>
+        </ul>
+        <div>
+          <p class="txt-total">9,000</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+</body>
+</html>

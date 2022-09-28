@@ -1,0 +1,14 @@
+@function sigma($number) {
+    $result: 0;
+
+    @for $i from 1 to $number {
+        $result: $result + $i;
+        // $result: #{$result} + $i; 이렇게 하면 문자열 처리됨.
+    }
+
+    @return $result;
+}
+
+.one {
+    width: sigma(11)px;
+}

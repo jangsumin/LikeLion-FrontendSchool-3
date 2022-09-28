@@ -1,0 +1,9 @@
+$sumin: 10;
+@while $sumin > 1 {
+    $sumin: $sumin - 2;
+    .content-#{$sumin} {
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+      /* 많이 사용하는 console 관련 메소드 */
+      console.log('hello');
+
+      let data = {
+        one : 1,
+        two : 2,
+        three : 3
+      };
+      console.dir(data);
+
+      for (const d in data)  {
+        console.log(d);
+      }
+      
+      let data2 = [10, 20, 30];
+      console.dir(data2);
+
+      // console.info("hello world");
+      
+      // 그룹을 지을 수 있고, 그룹의 마지막에 groupEnd() 메서드 사용
+      console.group("one");
+      console.log("호준/팀원");
+      console.log("유정/팀원");
+      console.log("혜연/팀원");
+      console.group("one");
+      console.log("태수/팀원");
+      console.log("슬기/팀원");
+      console.groupEnd();
+      console.log("end");
+      console.groupEnd();
+      console.log("end");
+
+      // table로 나타냄
+      console.table(data);
+      
+      console.warn("hello");
+      console.error("error");
+
+      console.log("%chello world", "color:red;font-size:32px");
+
+    </script>
+</body>
+</html>

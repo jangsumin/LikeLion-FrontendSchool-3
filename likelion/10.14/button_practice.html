@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습 시간</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: black;
+        }
+
+        ul {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li:nth-child(2), ul li:nth-child(3) {
+            margin-left: 30px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <ul>
+        <li>
+            <button>빨강</button>
+        </li>
+        <li>
+            <button>노랑</button>
+        </li>
+        <li>
+            <button>초록</button>
+        </li>
+    </ul>
+    <script>
+        const myBtn = document.querySelectorAll("button");
+        const div = document.querySelector("div");
+
+        myBtn[0].addEventListener('click', function(){
+            div.classList.remove('yellow', 'green');
+            div.classList.add("red");
+        });
+        myBtn[1].addEventListener('click', function(){
+            div.classList.remove('red', 'green');
+            div.classList.add("yellow");
+        });
+        myBtn[2].addEventListener('click', function(){
+            div.classList.remove('red', 'yellow');
+            div.classList.add("green");
+        });
+    </script>
+</body>
+</html>

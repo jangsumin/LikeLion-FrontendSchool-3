@@ -10,11 +10,13 @@
     <input type="text" name="" id="title">
     <textarea name="" id="text" cols="30" rows="10"></textarea>
     <button id="btn">memo</button>
+    <button id="reset">reset</button>
     <div id="memoList"></div>
     <script>
         const title = document.querySelector('#title');
         const text = document.querySelector('#text')
         const btn = document.querySelector('#btn');
+        const resetBtn = document.querySelector("#reset");
         const memoList = document.querySelector('#memoList');
 
         function save() {
@@ -28,7 +30,14 @@
             text.value = '';
         };
 
+        function reset() {
+            localStorage.clear();
+            title.value = '';
+            text.value = '';
+        }
+
         btn.addEventListener('click', save);
+        resetBtn.addEventListener('click', reset);
     </script>
 </body>
 </html>
